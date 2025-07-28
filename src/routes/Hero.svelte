@@ -1,7 +1,7 @@
 <script lang="ts">
     import { base } from '$app/paths';
     import downArrow from '$lib/icons/down_arrow.svg';
-    import herobg from '$lib/img/hero-home/hero-bg.png';
+    import herobg from '$lib/img/hero-home/hero-bg-2.png';
 
     const { heading, subheading, button_content } = $props();
 
@@ -17,9 +17,12 @@
     }
 </script>
 
-<div class="h-[100%] w-auto">
-    <div class="flex h-full w-full">
-        <img src={herobg} alt="background" />
+<div class="h-[100%] w-auto text-center">
+    <div class="relative flex h-full w-full">
+        <img class="z-0 opacity-50" src={herobg} alt="background" />
+        <h1 class="absolute left-0 right-0 top-3/8 z-10 text-7xl font-bold">
+            WHERE SMART DESIGN<br />MEETS SOLID<br />CONSTRUCTION.
+        </h1>
     </div>
     <a href="#three_columns" onclick={handleAnchorClick}>
         <div class="heroscroll content bottom-[10px] h-[30px] w-full">

@@ -1,16 +1,9 @@
 <script>
-    import Carousel from './Carousel.svelte';
-    import Hero from './Hero.svelte';
-    import HighlightText from './Highlight_Text.svelte';
     import Three_Columns from '$lib/components/Three_Columns.svelte';
     import construction from '$lib/people/team/s5.jpg';
     import management from '$lib/people/team/s3.jpg';
     import design from '$lib/img/stock-imgs/design.png';
 </script>
-
-<div class="mb-[5%]">
-    <Hero heading={'SA R.A. NOLIDO'} subheading={'SOLIDO'} button_content={'Get in Touch'}></Hero>
-</div>
 
 <div class="my-16" id="three_columns">
     <Three_Columns
@@ -27,11 +20,4 @@
         alt_2={'Lorem ipsum'}
         alt_3={'Lorem ipsum'}
     ></Three_Columns>
-</div>
-
-<div class="my-16 overflow-hidden">
-    <Carousel
-        heading={'Featured Projects'}
-        imgs={['1.png', '2.png', '3.png', '5.png', '6.png', '7.png', '8.png', '9.png']}
-    ></Carousel>
 </div>
